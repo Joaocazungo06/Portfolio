@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css1/Ex.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <title>Home</title>   
+</head>
+<!--------------------------Estilo-------------------->
+<style>
+  /* ---------------------Home---------------------- */
+  .home{
+width: 100%;
+height: auto;
+display: flex;
+background: #f5f5f5;
+}
+.textoHome{
+  width: 50%;
+  height: auto;
+  margin-top: 15%;
+  margin: auto 0;
+  text-align: center;
+  justify-content: center;
+}
+.textoHomeconteudo{
+padding-top:20px;
+}
+.textoHomeconteudo h2{
+  font-size: 55px;
+font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.textoHomeconteudo p{
+  color:rgb(26, 11, 245);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 65px;
+}
+.textoHomeconteudo blockquote{
+  font-size: 35px;
+font-weight: bold;
+border-radius: 4px solid;
+white-space: nowrap;
+overflow: hidden;
+font-family:monospace;
+}
+.imgHome img{
+      width: 100%;
+      height: auto;
+        margin: 5% auto;
+        overflow: hidden;
+        object-fit: cover;
+        padding-top:40px;
+    }
+    .redesHome{
+  margin-left: 0;
+}
+.redesHome img{
+    margin-top:15px; 
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+border: 1px solid transparent;
+border-radius: 50%; 
+cursor: pointer;
+ } 
+    /*    Responsivo  */
+@media screen and (max-width:1000px){
+      .home{
+        display: block;
+        height:auto;
+      }
+      .textoHome{
+        width: 100%;
+        height:auto;
+        margin-top: 9%;
+      }
+      .textoHomeconteudo h2{
+     font-size:50px;
+      }
+      .textoHomeconteudo p{
+font-size:50px ;
+      }
+      .textoHomeconteudo{
+        height: auto;
+        margin-top: 5%;
+        padding-top: 48px;
+        text-align: center;
+  justify-content: center;
+      }
+      .textoHomeconteudo blockquote{
+      font-size: 42px;
+    } 
+    .imgHome{
+      width: 100%;
+      margin-top:0;
+    }
+    .redesHome {
+position: fixed;
+right: 0px;
+top:30.9%;
+ z-index: 5;
+    }
+    .redesHome img{
+      display: flex;
+      margin:0px; 
+    }
+    }
+ @media screen and (max-width:600px){
+  .home{
+    padding-top:30px;
+  }
+ .textoHomeconteudo h2{
+font-size: 29px;
+ }
+ .textoHomeconteudo p{
+font-size: 32px;
+ }
+ .textoHomeconteudo blockquote{
+font-size: 25px;
+ }
+.redesHome {
+width: 38px;
+ }
+ }
+   
+    /* ----------------Home sobre---------------------- */
+    .homeSobre{
+      width: 100%;
+      height:auto;
+    }
+    .conteudo{
+display: flex;
+width: 100%;
+height:auto;
+}
+.textoSobre { 
+width: 60%;
+margin-top:10%; 
+}
+.textoSobre a{
+  text-decoration: none ;
+  background: rgba(40, 85, 209, 0.911);
+ color:white;
+ padding: 9px 7px 9px 7px;
+ border-radius: 7%;
+margin-left: 45%;
+margin-top: 300px;
+border: 1px solid rgb(255, 255, 255);
+}
+.textoSobre a:hover{
+background-color: rgba(9, 164, 236, 0.644);
+}
+.textoSobre p{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  height:auto;
+  font-size:40px;
+  padding-left:40px;
+  padding-right:38px;
+  padding-bottom: 10px;
+margin:15px auto;
+}
+.imgSobre{
+width: 40%;  
+} 
+.quadro{ 
+  width: 70%;
+  height:auto;
+margin: 30% auto;
+object-fit: cover;
+overflow: hidden;
+box-shadow: 0px 0px 14px 1px rgb(0, 0, 0);
+border-radius:50%;
+animation-name: quadro;
+animation-duration: 1.9s;
+animation-iteration-count: infinite;
+}
+@keyframes quadro{
+   0%{
+    transform: translateY(0px);
+   } 
+   50%{
+  transform: translateY(-20px);
+   }
+}
+.quadro img{
+width: 100%;
+height:100%;
+object-fit: cover;
+}
+@media (max-width:1000px) {
+  .conteudo{
+    display:block;
+height:auto;
+  }  
+  .textoSobre{
+width: auto; 
+height:auto;
+  }
+ .textoSobre p{
+  text-decoration: none;
+  font-size: 30px;
+  margin-top:20px;
+  padding-left:20px;
+  padding-right:20px; 
+  }
+ .textoSobre a{
+margin-left: 43%;
+margin-right: 0%;
+  }
+  .imgSobre{
+width: 100%;
+  }
+  .quadro{
+    margin:10% auto;
+  } 
+  }
+  @media screen and (max-width: 600px){
+.textoSobre p{
+  font-size:15px;
+}
+  }
+
+    /* ----------------Home Habilidades---------------- */
+   .homeHabilidade{
+    width:100%;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    .quadro2{
+    width: 50%;
+    height:auto;
+ margin-left: 20%;
+}
+.quadro2 .blocos{
+    margin-top: 5%; 
+}
+.quadro1{  
+font-size: 0px;
+}
+.blocos{
+display: inline-block;
+ width: 150px;  
+ height:auto;
+ margin-left:2%; 
+ margin-bottom: 2%;
+ border-radius: 30%;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;  
+}
+.blocos img{
+width: 150px;
+float: left;
+}
+@media (max-width:900px) {
+  .corpo{
+display: block;
+width: 100%;
+height: auto;
+  }  
+  .quadro1{
+margin-left: 0%;
+font-size: 0px;
+  }
+  .quadro2{
+     width: 100%;
+     margin-left: 0;  
+  }
+  .blocos{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:600px){
+  .blocos{
+ width: 100px;  
+ height:auto;
+ margin-left:15px;
+ margin-bottom: 2%;
+ border-radius: 30%;  
+}
+.blocos img{
+width: 100px;
+}
+}
+
+ /* --------------Home Projectos------------------ */
+    .homeProjectos{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    #ProjectosQuadro{
+   position: relative;
+    display: flex;
+    text-align:center;
+justify-content: center;
+align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+#ProjectosQuadro .card{
+   position: relative;  
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ width: 350px;
+ height: 310px;
+  background: rgb(247, 246, 246);
+  border-radius: 25px;
+ transition: 0.5s;
+ }
+#ProjectosQuadro .card:hover{
+    height: 400px;
+ }
+#ProjectosQuadro .card .imgbox{
+  position: absolute;
+  top: 20px;
+  width: 250px;
+  height: 220px;
+  background: #333;
+  margin-left:47px; 
+  overflow: hidden;
+border-radius: 12px;
+transition: 0.5s;
+ }
+ #ProjectosQuadro .card:hover .imgbox{
+    top:-100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.37);
+}
+#ProjectosQuadro .card .imgbox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 250px;
+    height: 218px;
+    object-fit: cover;
+}
+#ProjectosQuadro .card .txtQ {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden; 
+    transition: 0.5s;
+}
+#ProjectosQuadro .card:hover .txtQ{
+top: 130px;
+height: 250px;
+}
+#ProjectosQuadro .card .txtQ h2{
+  text-align: center;
+font-size: 1.5em;
+font-weight: 700;
+color: var(--color);
+}
+#ProjectosQuadro .card .txtQ p{
+    color: rgb(27, 27, 27);
+}
+#ProjectosQuadro .card .txtQ a{
+position: relative;
+top: -10px;
+display: inline-block;
+border-radius: 10px;
+padding: 7px 30px;
+background:rgb(60, 168, 201);
+color:#fff;
+font-weight: 500;
+text-decoration: none;
+}
+#ProjectosQuadro .card .txtQ a:hover{
+  border:1px solid black;
+}
+.homeProjectos a{
+text-decoration: none ;
+background: rgba(40, 85, 209, 0.911);
+color:white;
+padding: 9px 7px 9px 7px;
+border-radius: 7%;
+margin: 1% auto;
+border: 1px solid rgb(255, 255, 255);
+}
+.homeProjectos a:hover{
+background-color: rgba(9, 164, 236, 0.644);
+}
+/* Responsivo  */
+@media screen and  (max-width:900px){
+  #ProjectosQuadro{
+    padding:50px 50px; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+#ProjectosQuadro .card .txtQ a{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#ProjectosQuadro .card .imgbox img{
+    object-fit: cover;
+}
+}
+
+@media screen and (max-width:600px){
+#ProjectosQuadro .card {
+  width:250px;
+  height: 210px;
+}
+  #ProjectosQuadro .card .imgbox{
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+ }
+ #ProjectosQuadro .card .txtQ {
+    height: 0px;
+}
+#ProjectosQuadro .card .txtQ h2{
+font-size: 1.0em; 
+font-weight:400;
+}
+#ProjectosQuadro .card .txtQ a{ 
+text-align: center;
+padding: 3px 10px;
+font-weight: 450;
+}
+#ProjectosQuadro .card .imgbox img{
+    object-fit: cover;
+}
+}
+</style>
+<!-----------------------Cabeça------------------------>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+<h1>Dev Cazungo</h1>
+        </div>
+  
+        <div class="links" id="menu">
+            <span id="fechar" onclick="fechar()" href="">&times;</span>
+
+       <a class="link" href="projectos.html">projetos</a>
+
+          <a class="link" href="sobre.html">sobre</a>
+
+          <a class="link" href="habilidades.html">habilidades</a>
+
+    </div>
+
+    <div class="hamburger">
+
+   <span class="bar" id="aparecer" onclick="abrir()">&#9776</span>
+</div>
+    </nav>
+</header>
+
+<!--------------CONTEUDO DA PAGINA--------------------->
+<main id="conteudoDPagina" > 
+<!-------------- Home------------->
+<div class="home">
+    <div class="textoHome"> 
+      <div class="textoHomeconteudo">
+        <h2>Olá eu sou o </h2>
+          <p>João Cazungo</p> 
+            <blockquote></blockquote>
+
+  <div class="redesHome">
+<a href="https://m.facebook.com/profile.php?id=100005982215310" target="_blank"><img src="icons/facebook.png" width="45px" alt=""></a> 
+<a href="https://wa.me/+244933423390" target="_blank"><img src="icons/whats.png" width="45px" alt=""></a>
+<a href="https://www.linkedin.com/in/joao-cazungo" target="_blank"><img src="icons/in.png" width="45px" alt=""></a>
+    </div>
+  </div>
+</div>
+    <div class="imgHome">
+     <img src="img/pngtree-children-s-software-programming-image_2230759.jpg" >
+  </div>
+</div>
+
+<!--------------- Home Sobre ------------->
+
+<section>
+  <div class="homeSobre">
+
+    <h3>Sobre </h3>
+    <div class="conteudo">
+      <div class="textoSobre">
+        <p> Olá eu sou o João Cazungo, sou Desenvolvedor Front-end apaixonado por tecnologia, especializado em desenvolvimento web. Tenho Habilidades em HTML, CSS, JAVASCRIPT, GIT-GITHUB, BOOTSTRAP e TAILWINDCSS, e gosto de estar sempre atualizado com as últimas tendências e ferramentas sobre tecnologia. </p>
+        <p>Acredito na importância da colaborção, trabalho em equipe e estou em busca de oportunidade para crescer profissionalmente.</p>
+
+      
+        <a href="sobre.html">ver mais</a>
+           
+          </div>
+          
+  <div class="imgSobre">
+      <div class="quadro" >
+        <img id="foto" src="img/testado.jpg"  alt="">
+            </div>
+          </div>
+        </div> 
+      </div>
+      </section>
+
+<!------------------- Home Projectos --------->
+
+<hr style ="margin-left:10%; margin-right: 10%; color:white;">
+<section>
+<div class="homeProjectos">
+<h3>Projetos</h3>
+
+<div id="ProjectosQuadro">
+
+   <div class="card"  style="color:#03a9f4;">
+       <div class="imgbox">
+        <img src="img/processo.png" alt="">
+               </div>
+                   <div class="txtQ">
+                    <h2>Sem Conteúdo</h2>
+                    <p></p>
+                   <a href="">Ver</a>
+               </div>     
+           </div> 
+
+   <div class="card"  style="color:#03a9f4;">
+       <div class="imgbox">
+        <img src="img/processo.png" alt="">
+               </div>
+                   <div class="txtQ">
+                       <h2>Sem Conteúdo</h2>
+                            <p></p>
+                   <a href="">Ver</a>
+               </div>     
+           </div>
+   <div class="card"  style="color:#03a9f4;">
+       <div class="imgbox">
+           <img src="img/processo.png" alt="">
+               </div>
+                   <div class="txtQ">
+                    <h2>Sem Conteúdo</h2>
+                    <p></p>
+                   <a href="">Ver</a>
+               </div>     
+            </div> 
+       </div>
+                <a href="projectos.html">Ver mais</a>  
+    </div>
+</section>
+
+  <!--                Home Habilidade -->
+
+  <hr style ="margin-left:10%; margin-right: 10%; color:white;">
+   <h3>Habilidades</h3>
+  <section>
+<div class="homeHabilidade">
+
+  <div class="quadro1">
+
+     </div>
+
+       <div class="quadro2">
+<div id="html"  class="blocos">
+    <img src="img/html-5.png" width="auto" height="auto">
+</div>
+<div id="css"  class="blocos">
+    <img src="img/css-3.png" alt="">
+</div>
+<div id="js"  class="blocos">
+    <img src="img/js.png" alt="">
+</div>
+<div id="boot"  class="blocos">
+    <img style="background-color: white;" src="img/bootstrap.png" alt="">
+</div>
+<div id="git" class="blocos">
+    <img style="background-color: white;"  src="img/git.png" alt="">
+</div>
+<div id="tailwind" class="blocos">
+    <img src="img/tw.jpeg" alt="">
+</div>
+
+</div>
+ </div>
+
+</div>
+</secion>
+  </main>
+<!-------------------FOOTER---------------------------->
+
+<footer>
+<div class="RodaP"> 
+   <div class="redesSocias" >
+        <a  class="fb" href="https://m.facebook.com/profile.php?id=100005982215310" target="_blank"><img src="icons/facebook.png" width="45px" alt=""></a>
+        <a  class="insta" href="https://www.instagram.com/joao.cazungo/" target="_blank"> <img src="icons/insta.png" width="45px" alt=""></a>
+        <a  class="in" href="https://www.linkedin.com/in/joao-cazungo" target="_blank"><img src="icons/in.png" width="45px" alt=""></a>
+        <a  class="git" href="https://github.com/Joaocazungo06" target="_blank"><img src="icons/github.png" width="45px" alt=""></a>
+        <a  class="whats" href="https://wa.me/+244933423390" target="_blank"><img src="icons/whats.png" width="45px" alt=""></a>
+      </div>
+
+    <div class="linkFooter">
+<a href="index.html">home</a>
+<a href="projectos.html">projetos<a>
+<a href="sobre.html">sobre</a>
+<a href="habilidades.html">habilidades</a>
+    </div>
+
+ <div class="Direitos">
+   <h6> &copy; Copyright 2023. Direitos Reservados.</h6>
+ </div>
+ 
+</div>
+
+</footer>
+<!-- <script src="js/bootstrap.min.js">          </script> -->
+<script src="javaScript/Ex.js"></script>
+</body>
+
+</html>

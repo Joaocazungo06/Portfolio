@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css1/Ex.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>projectos</title>
+</head>
+<style>
+    .conteudoDpagina{
+      width: 100%;
+        height: auto;
+ margin-top:6%;
+    }
+    #ProjectosQuadro{
+padding: 100px 50px;     
+ display: flex;
+   position: relative;  
+    justify-content: center;
+    align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+}
+#ProjectosQuadro .card{
+   position: relative;  
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ width: 350px;
+ height: 300px;
+  background: rgb(247, 246, 246);
+  border-radius: 20px;
+ box-shadow: 0 35px 80px rgb(0,0,0,0.15);
+ transition: 0.5s;
+ }
+#ProjectosQuadro .card:hover{
+    height: 400px;
+ }
+#ProjectosQuadro .card .imgbox{
+  position: absolute;
+  top: 20px;
+  width: 250px;
+  height: 220px;
+  background: #333;
+  margin-left:47px; 
+  overflow: hidden;
+  object-fit: cover;
+border-radius: 12px;
+transition: 0.5s;
+ }
+ #ProjectosQuadro .card:hover .imgbox{
+    top:-100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgb(0,0,0,0.2);
+}
+#ProjectosQuadro .card .imgbox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+}
+#ProjectosQuadro .card .txtQ {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+#ProjectosQuadro .card:hover .txtQ{
+top: 130px;
+height: auto;
+}
+#ProjectosQuadro .card .txtQ h2{
+text-align: center;
+font-size: 1.5em;
+font-weight: 700;
+color: var(--color);
+}
+#ProjectosQuadro .card .txtQ p{
+    color: #333;
+}
+#ProjectosQuadro .card .txtQ a{
+position: relative;
+top: -10px;
+display: inline-block;
+border-radius: 10px;
+padding: 7px  30px;
+background:rgb(60, 168, 201);
+color:#fff;
+font-weight: 500;
+text-decoration: none;
+}
+
+/*      Responsivo para tabletes */
+@media (max-width:1065px
+){
+.conteudoDpagina{
+margin-top:20%;
+}
+}
+
+/*       Responsivo para telefones */
+@media (max-width:600px){
+#ProjectosQuadro .card {
+  width:250px;
+  height: 210px;
+}
+  #ProjectosQuadro .card .imgbox{
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+ }
+ #ProjectosQuadro .card .txtQ {
+    height: 0px;
+}
+#ProjectosQuadro .card .txtQ h2{
+font-size: 1.0em; 
+font-weight:400;
+}
+#ProjectosQuadro .card .txtQ a{ 
+text-align: center;
+padding: 3px 10px;
+font-weight: 450;
+}
+}
+</style>
+<!---------------------------Cabeça------------------------>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+<h1>Dev Cazungo</h1>
+        </div>
+  
+        <div class="links" id="menu">
+            <span id="fechar" onclick="fechar()" href="">&times;</span>
+
+       <a class="link" href="index.html">home</a>
+
+          <a class="link" href="sobre.html">sobre</a>
+
+          <a class="link" href="habilidades.html">habilidades</a>
+
+    </div>
+
+    <div class="hamburger">
+
+   <span class="bar" id="aparecer" onclick="abrir()">&#9776</span>
+
+
+    </div>
+
+    </nav>
+</header>
+<!------------------------------CONTEUDO DA PAGINA------------------->
+<main id="conteudoDPagina" > 
+
+<section>
+    <div class="conteudoDpagina">
+<h3>Projectos</h3>
+    
+<div id="ProjectosQuadro">
+           
+    <div class="card"  style="color:#03a9f4;">
+         <div class="imgbox">
+             <img src="img/processo.png" alt="">
+            </div>
+                 <div class="txtQ"> 
+                    <h2>Sem Conteúdo</h2>
+                    <p><p>
+         <a href="">Ver</a>      
+     </div>
+</div>
+     <div class=" card" style="color:#03a9f4;">
+         <div class="imgbox">
+            <img src="img/processo.png" alt="">
+                 </div>
+                     <div class="txtQ">
+                        <h2>Sem Conteúdo</h2>
+                        <p></p>
+         <a href="">Ver</a>
+     </div>
+ </div>
+     <div class="card"  style="color:#03a9f4;">
+         <div class="imgbox">
+            <img src="img/processo.png" alt="">
+                 </div>
+                     <div class="txtQ">
+                        <h2>Sem Conteúdo</h2>
+                        <p></p>
+                     <a href="">Ver</a>
+                 </div>     
+             </div>
+         </div>
+        </div>
+     </section>
+</main>
+<!---------------------------FOOTER-------------------------->
+
+   <footer class="RodaP">
+
+
+    <div class="redesSocias" >
+        <a  class="fb" href=""><img src="icons/facebook.png" width="45px" alt=""></a>
+        <a  class="insta" href=""><img src="icons/insta.png" width="45px" alt=""></a>
+        <a  class="in" href=""><img src="icons/in.png" width="45px" alt=""></a>
+        <a  class="git" href=""><img src="icons/github.png" width="45px" alt=""></a>
+        <a  class="whats" href=""><img src="icons/whats.png" width="45px" alt=""></a>
+      </div>
+
+    <div class="linkFooter">
+<a href="index.html">home</a>
+<a href="projectos.html">projetos<a>
+<a href="sobre.html">sobre</a>
+<a href="habilidades.html">habilidades</a>
+    </div>
+
+    <div class="Direitos">
+        <h6>&copy; Copyright 2023, Direitos Reservado.</h6>
+      </div>
+
+</footer>
+<script src="js/bootstrap.min.js"> </script>
+<script src="javaScript/Ex.js"></script>  
+</body>
+</html>

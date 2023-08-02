@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css1/Ex.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Sobre</title>
+</head>
+<style>
+  .conteudoDpagina{
+width: 100%;
+height:auto;
+margin-top: 9%;
+  }
+   .conteudo{
+display: flex;
+
+}
+.textoSobre { 
+width: 60%;
+}
+.textoSobre p{
+  color:white;
+  height:auto;
+  padding-left:10%;
+  font-size: 30px;
+  font-weight: 500;
+  margin:6% auto;
+animation-name: texto;
+animation-duration: 8s;
+animation-direction: alternate;
+animation-iteration-count: initial;
+}
+ @keyframes texto {
+0%{opacity: 5%;}
+100%{opacity:100%;}
+}
+.imgSobre{
+width: 40%;  
+} 
+.textoSobre ul{
+  font-size:25px;
+color:white;
+}
+.quadro{ 
+  width: 70%;
+  height:auto;
+  text-align: center;
+  justify-content: center;
+margin: 20% auto;
+object-fit: cover;
+box-shadow: 0px 0px 14px 1px rgb(0, 0, 0);
+border-radius: 50%;
+overflow: hidden;
+animation-name: quadro;
+animation-duration: 1.9s;
+animation-iteration-count: infinite;
+}
+@keyframes quadro{
+   0%{
+    transform: translateY(0px);
+   } 
+   50%{
+  transform: translateY(-20px);
+   }
+}
+.quadro img{
+width: 100%;
+height:100%;
+object-fit: cover;
+}
+.idioma{
+  text-align: center;
+  justify-content: center;
+  padding-bottom:30px;
+}
+.idioma div img{
+ border: 1px solid red;
+ width: 100px; 
+ height: auto;
+ margin: 20px;
+}
+  .idioma li{
+    font-weight: 300px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  .idioma li img{
+    width:10%;
+border-radius: 10%;
+margin-left:5px;
+  }
+
+/* Responsivo de Tabletes */
+@media (max-width:1000px) {
+  .conteudoDpagina{
+    width: 100%;
+height:auto;
+margin-top:20%;
+  }
+  .conteudo{
+    display:block;
+  }  
+  .textoSobre{
+width: 100%; 
+height:auto;
+  }
+ .textoSobre p{
+ margin: 5% auto;
+ padding-right:10px;
+ font-size: 28px; 
+  }
+  .imgSobre{
+width: 100%;
+  }
+  .quadro{
+    margin:10% auto;
+  }
+  .idioma{
+    padding-bottom: 20px;
+  }
+  .idioma li{
+    font-weight: 300px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  }
+  /* Responsivo para Telefones */
+  @media screen and (max-width:600px){
+    .conteudoDpagina{
+margin-top:25%;
+  }
+  .textoSobre p{
+    font-size:20px;
+    font-weight: 400;
+  }
+  }
+</style>
+<!---------------------------Cabeça------------------------>
+<body>
+  <header>
+    <nav>
+    <div class="logo">
+<h1>Dev Cazungo</h1>
+    </div>
+    
+    <div class="links" id="menu">
+      <span id="fechar" onclick="fechar()" href="">&times;</span>
+
+ <a class="link" href="index.html">home</a>
+
+    <a class="link" href="projectos.html">Projetos</a>
+
+    <a class="link" href="habilidades.html">habilidades</a>
+
+</div>
+
+<div class="hamburger">
+<span class="bar" id="aparecer" onclick="abrir()">&#9776</span>
+
+</div>
+</nav>
+</header>
+<!--------------------------------CONTEUDO DA PAGINA------------------------->
+<main id="ConteudoDPagina">
+  <section>
+<div class="conteudoDpagina">
+   <h3>Sobre</h3>  
+    <div class="conteudo">
+       
+     <div class="textoSobre">
+      <p> Olá eu sou o João de Jesus Cazungo, tenho 22 anos, nasci em Angola, Luanda e sou apaixonado por Tecnologia.</p>
+
+      <p>Em 2016 quando eu e dois colegas, depois de assistir a Série Mr.Robot, ficamos curiosos e decidimos fazer um curso de programação, queríamos também nos tornar HACKERS de sucesso. Só que depois de terminarmos o curso nos separamos e cada um seguiu o seu caminho, e já em 2022 depois de passar muito tempo comprei o meu computador, e decidi entrar de novo no mundo da programação, na área de Desenvolvimento web.</p>
+
+      <p>E hoje com 8 meses de muito estudo sou Desenvolvedor Front-end, tenho habilidades em <i> HTML, CSS, BOOTSTRAP, TAILWINDCSS, GIT- GITHUB e JAVASCRIPT.</i> </p>
+      <div class="idioma">
+    <p style="text-align: center; color:white; font-weight: 500 ; font-size: 25px;">Idioma</p>    
+<li>Portugues<img src="img/pt.png" alt="">
+</li>
+          </div>  
+</div>
+
+  <div class="imgSobre">
+     <div class="quadro">
+       <img id="foto" src="img/01.jpg" alt="">
+           </div>
+           
+           
+         </div>
+        
+       </div>
+      </div>
+   </section>
+</main>
+<!-----------------------FOOTER----------------->
+
+<footer class="RodaP">
+
+  <div class="redesSocias" >
+    <a  class="fb" href=""><img src="icons/facebook.png" width="45px" alt=""></a>
+    <a  class="insta" href=""><img src="icons/insta.png" width="45px" alt=""></a>
+    <a  class="in" href=""><img src="icons/in.png" width="45px" alt=""></a>
+    <a  class="git" href=""><img src="icons/github.png" width="45px" alt=""></a>
+    <a  class="whats" href=""><img src="icons/whats.png" width="45px" alt=""></a>
+  </div>
+
+<div class="linkFooter">
+<a href="index.html">home</a>
+<a href="projectos.html">projetos<a>
+<a href="sobre.html">sobre</a>
+<a href="habilidades.html">habilidades</a>
+</div>
+
+<div class="Direitos">
+  <h6> &copy; Copyright 2023, Direitos Reservado.</h6>
+</div>
+
+</footer>
+<script src="js/bootstrap.min.js"> </script>
+  <script src="javaScript/Ex.js"> </script>  
+</body>
+</html>

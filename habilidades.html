@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css1/Ex.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Habilidades</title>
+</head>
+
+<style>
+.conteudoDpagina {
+    width:100%;
+    height:auto;
+  padding-bottom: 10%; 
+   margin-top: 10%;
+}
+.corpo{
+   text-align: center;
+    justify-content: center;
+    align-items: center;  
+    display: flex; 
+     flex-wrap: wrap;   
+}
+    .quadro2{
+    margin-top: 5%;
+    width: 55%;
+    height:auto;
+
+}
+.quadro1{
+border:2px solid rgb(255, 255, 255);
+width: 25%;
+height:auto;
+margin-right:20px;
+border-radius: 8%;
+font-size: 28px;
+background: rgb(0, 0, 0);
+text-indent: 40px;
+color:rgb(255, 255, 255);
+}
+.blocos{
+display: inline-block;
+ width: 160px;  
+ height:150px;
+ margin-left:2% ;
+ margin-bottom: 2%;
+ border-radius: 18%;
+  overflow: hidden;  
+cursor: pointer;
+}
+.blocos img{
+width: 160px;
+float: left;
+}
+/* Responsivo para tabletes */
+@media (max-width:1000px){
+.conteudoDpagina{
+   width: 100%;
+height: auto;
+margin-top: 20%; 
+}
+  .corpo{
+display: block;
+}  
+  .quadro1{
+    width: 0%;
+    height: 0px;
+margin: 25px auto;
+border:1px solid rgb(46, 32, 170) ;
+font-size: 0px;
+  }
+  .quadro2{
+     width: 100%; 
+  }
+  .blocos{
+    flex-wrap: wrap;
+  }
+  .blocos:hover{
+    border: 0px;
+  }
+}
+@media (max-width:600px){
+  .conteudoDpagina{
+margin-top:25%;
+  }
+  .conteudoDpagina .quadro2 .blocos img{
+width:120px;
+height:120px;
+border-radius:30%;
+
+object-fit: cover;
+  }
+  .blocos img{
+    object-fit: cover;
+  }
+}
+
+</style>
+<!---------------------------Cabeça------------------------>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+<h1>Dev Cazungo</h1>
+        </div>
+  
+ <div class="links" id="menu">
+     
+     <span id="fechar" onclick="fechar()" href="">&times;</span>
+
+     <a class="link" href="index.html">home</a>
+
+         <a class="link" href="projectos.html">projetos</a>
+
+             <a class="link" href="sobre.html">sobre</a>
+                  </div>
+
+    <div class="hamburger">
+
+   <span class="bar" id="aparecer" onclick="abrir()">&#9776</span>
+
+
+    </div>
+
+    </nav>
+</header>
+<!------------------------CONTEUDO DA PAGINA------------------------>
+<section>
+
+<div id="conteudoDPagina" class="conteudoDpagina">
+    <h3>Habilidades</h3>
+<div  class="corpo" >
+  
+             <div class="quadro1">
+
+             </div>
+
+        <div class="quadro2">
+<div id="html" class="blocos">
+      <img  src="img/html-5.png" >
+</div>
+
+<div id="css" class="blocos">
+     <img src="img/css-3.png" alt="">
+ </div>
+
+<div id="js" class="blocos">
+     <img src="img/js.png" alt="">
+</div>
+
+<div id="boot" class="blocos">
+    <img style="background-color: white;" src="img/bootstrap.png" alt="">
+</div>
+
+<div id="git" class="blocos">
+    <img style="background-color: white;" src="img/git.png" alt="">   
+</div>
+<div id="tailwind" class="blocos">
+    <img src="img/tw.jpeg" alt="">
+</div>
+
+ </div>
+     </div>
+          </div>
+
+    </section>
+<!-----------------------FOOTER------------------------>
+   <footer class="RodaP">
+    
+    <div class="redesSocias" >
+      <a  class="fb" href=""><img src="icons/facebook.png" width="45px" alt=""></a>
+      <a  class="insta" href=""><img src="icons/insta.png" width="45px" alt=""></a>
+      <a  class="in" href=""><img src="icons/in.png" width="45px" alt=""></a>
+      <a  class="git" href=""><img src="icons/github.png" width="45px" alt=""></a>
+      <a  class="whats" href=""><img src="icons/whats.png" width="45px" alt=""></a>
+    </div>
+
+    <div class="linkFooter">
+<a href="index.html">home</a>
+<a href="projectos.html">projetos<a>
+<a href="sobre.html">sobre</a>
+<a href="habilidades.html">habilidades</a>
+    </div>
+
+    <div class="Direitos">
+        <h6>&copy; Copyright 2023, Direitos Reservado.</h6>
+      </div>
+
+</footer>
+<script src="js/bootstrap.min.js"> </script>
+<script src="javaScript/Ex.js"></script>
+</body>
+</html>
